@@ -65,7 +65,7 @@
   		 
   		  
   	       
-         <script type="text/javascript" src="yh.js"></script>   
+         <script type="text/javascript" src="yh2.js"></script>
         
           
 	</body>
