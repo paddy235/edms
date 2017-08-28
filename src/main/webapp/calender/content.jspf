@@ -1,0 +1,143 @@
+ <TABLE width="100%" height="100%" border="0" cellpadding="0" cellspacing="10">
+    <TBODY>
+      <TR>         
+      <TD width="50%" height="552" valign="top"> 
+        <TABLE border="0" width="100%">
+        <TBODY>
+      		<TR> 
+        	<TD bgcolor="#144684"><FONT size="2" color="#ffffff">分界口报表&查询</FONT></TD>
+      		</TR>
+			  <TR> 
+					  <TD><p><FONT size=2> - <A
+						href="report/report.jsp?code=xd&id=1" target=tdb_fjk>分界计划查询；按局、按分界口列车交接实际；分界口排空C明细及兑现率；移交车保有量；新线、国境站出入车</A></FONT><FONT size=2><BR>
+						  </FONT></p>
+						</TD>
+			  </TR>
+		  <TR> 
+			<TD align="right"><FONT size=2><A href="report/report.jsp?code=xd&id=1" target=tdb_fjk>更多>></A></FONT></TD>
+		  </TR>
+		</TBODY>
+	    </TABLE>
+  <br>
+          <TABLE border="0" width="100%"">
+            <TBODY>
+              <TR> 
+                <TD bgcolor="#144684"><FONT size="2" color="#ffffff">装卸车报表&查询</FONT></TD>
+              </TR>
+              <TR>                 
+              <TD ><FONT color=#003366 size=2>- <A
+	href="report/report.jsp?code=hd&amp;id=2" target=tdb_zxc>货运工作计划；各局装卸车情况及各局装卸车兑现率、品类别装车；请求车；使用车去向及使用车去向兑现率</A>；</FONT></TD>
+              </TR>
+              <TR> 
+                <TD align="right"><FONT size=2><A href="report/report.jsp?code=hd&amp;id=2" target=tdb_zxc>更多>></A></FONT></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+ <br>
+          <TABLE width="100%"  border="0">
+          <TBODY>
+              <TR>                 
+              <TD  bgcolor="#144684"><font color="#ffffff" size="2">汇总报表</font></TD>
+              </TR>
+              <TR> 
+              <TD ><FONT size=2>- <A
+				href="report/report.jsp?code=others&amp;id=3" target=tdb_qt>调度、煤炭和港口汇总表；口岸站、保留车、钢轨钢材、钢厂装卸车</A></FONT></TD>
+              </TR>
+              <TR>                 
+              <TD  align="right"><FONT size=2><A href="report/report.jsp?code=others&amp;id=3">更多>></A></FONT></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+<br>
+        <TABLE border="0" width="100%">
+          <TBODY>
+            <TR> 
+              <TD height="17" bgcolor="#144684"><FONT size="2" color="#ffffff">常用信息查询</FONT></TD>
+            </TR>
+            <TR> 
+			<td><font size=2>
+			-<a	href="#" target=tdb_fjktx>分界口图形显示</a></font>
+			</td> </TR><TR> <td><font size=2>
+			-<a	href="#" target=tdb_fjkcz>分界口分车种交接情况</a></font>
+			</td></TR><TR>
+			<td><font size=2>
+			-<a	href="#" target=tdb_yqb>预确报信息查询</a></font>			
+			</td>
+            </TR>
+            <TR> 
+              <TD height="15" align="right"><FONT size=2><A href="#" target=tdb_link>更多>></A></FONT></TD>
+            </TR>
+          </TBODY>
+        </TABLE> 
+      </TD>
+        
+      <TD width="50%" height="552" valign="top"> 
+	      <table border="0" width="100%">
+          <tbody>
+            <tr> 
+              <td bgcolor="#144684"><font size="2" color="#ffffff">车流查询&兑现率</font></td>
+            </tr>
+            <tr> 
+              <TD > <FONT size=2>- <a href="report/report.jsp?code=d18cltj&amp;id=6" target=tdb_d18cltj>运调15、运调16A、运调16B及车流A、车流C、18点待发重车、运输工作汇总表等多方式查询；包括各种台帐查询</A></FONT></TD>
+            </tr>
+            <tr> 
+              <td align="right"><font size=2><a href="report/report.jsp?code=d18yyc&amp;id=4" target=tdb_d18yyc>更多>></a></font></td>
+            </tr>
+          </tbody>
+        </table>
+<br>
+          <TABLE border="0" width="100%"">
+            <TBODY>
+              <TR>                 
+              <TD bgcolor="#144684"><FONT size="2" color="#ffffff">运输收入&正晚点</FONT></TD>
+              </TR>
+              <TR>                 
+              <TD><FONT size=2>- <a href="report/report.jsp?code=d18zwd&amp;id=5" target=tdb_d18zwd>各类运输收入汇总表；全路客运情况日报表；旅客列车正晚点情况表（YB8）;货物列车正晚点情况表（YB6）等客运统计数据</A>
+                </FONT></TD>
+              </TR>
+              <TR> 
+                <TD align="right"><FONT size=2><A href="report/report.jsp?code=d18zwd&amp;id=5" target=tdb_d18zwd>更多>></A></FONT></TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+<br>
+        <TABLE border="0" width="100%">
+          <TBODY>
+            <TR> 
+              <TD height="17" bgcolor="#144684"><FONT size="2" color="#ffffff">运用车及非运用车</FONT></TD>
+            </TR>
+            <TR> 
+			<td><font size=2>- <a
+				href="report/report.jsp?code=d18yyc&amp;id=4" target=tdb_d18yyc>运用车、非运用车、现在车汇总及详情查询；备用车、守车查询</a></font></td>
+            </TR>
+            <TR> 
+              <TD height="15" align="right"><FONT size=2><A href="report/report.jsp?code=d18cltj&amp;id=6" target=tdb_d18cltj>更多>></A></FONT></TD>
+            </TR>
+          </TBODY>
+        </TABLE> 
+<br>
+        <TABLE border="0" width="100%">
+          <TBODY>
+            <TR> 
+              <TD height="17" bgcolor="#144684"><FONT size="2" color="#ffffff">其他信息查询</FONT></TD>
+            </TR>
+            <TR> 
+			<td><font size=2>
+			-<a	href="#" target=tdb_wlmqdf>乌鲁木齐局大风监测</a></font>
+			</td> </TR><TR> <td><font size=2>
+			-<a	href="#" target=tdb_hp>货票信息查询</a></font>
+			</td></TR><TR>
+			<td><font size=2>
+			-<a	href="#" target=tdb_jzx>集装箱信息查询</a></font>			
+			</td>
+            </TR>
+            <TR> 
+              <TD height="15" align="right"><FONT size=2><A href="#" target=tdb_link>更多>></A></FONT></TD>
+            </TR>
+          </TBODY>
+        </TABLE> 
+	</TD>
+      
+	  </TR>
+    </TBODY>
+  </TABLE>

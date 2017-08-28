@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="GB2312"?>
+<web-app>
+    <display-name>cmd system</display-name>
+    <description>cmd system</description>
+    <servlet>
+        <servlet-name>Log4jInitServlet</servlet-name>
+        <servlet-class>
+            mor.commons.properties.Log4jInitServlet
+        </servlet-class>
+        <init-param>
+            <param-name>log4j.init.filename</param-name>
+            <param-value>
+                /WEB-INF/properties/log4j.properties
+            </param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet>
+        <servlet-name>SysPropertiesLoaderServlet</servlet-name>
+        <servlet-class>
+            mor.commons.properties.SysPropertiesLoaderServlet
+        </servlet-class>
+        <init-param>
+            <param-name>system.properties.filename</param-name>
+            <param-value>
+                /WEB-INF/properties/isys.properties
+            </param-value>
+        </init-param>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+    <servlet>
+        <servlet-name>DbConnInitServlet</servlet-name>
+        <servlet-class>
+            mor.commons.properties.DbConnInitServlet
+        </servlet-class>
+        <load-on-startup>3</load-on-startup>
+    </servlet>
+    <welcome-file-list>
+        <welcome-file>indexFrame.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!--<context-param>-->
+        <!--&lt;!&ndash; 是否允许直接读取GIS服务器生成的缓存 &ndash;&gt;-->
+        <!--<param-name>enableLocalCache</param-name>-->
+        <!--<param-value>true</param-value>-->
+    <!--</context-param>-->
+    <!--<context-param>-->
+        <!--&lt;!&ndash; GIS服务器生成缓存图片的物理位置，要和SuperMapIServer.xml文件 outputSetting中的outputDir指向同一文件路径 &ndash;&gt;-->
+        <!--<param-name>localOutput</param-name>-->
+        <!--<param-value>C:\Tomcat6\webapps\output\</param-value>-->
+    <!--</context-param>-->
+    <!--<context-param>-->
+        <!--&lt;!&ndash; 浏览GIS服务器生成的缓存图片的地址，要和SuperMapIServer.xml文件outputSetting中的url配置的一致 &ndash;&gt;-->
+        <!--<param-name>localWebSite</param-name>-->
+        <!--<param-value>http://10.1.69.159:8088/output/</param-value>-->
+    <!--</context-param>-->
+    <!--<context-param>-->
+        <!--&lt;!&ndash; 是否允许编辑地物，更新地物属性和删除地物 &ndash;&gt;-->
+        <!--<param-name>enableEdit</param-name>-->
+        <!--<param-value>false</param-value>-->
+    <!--</context-param>-->
+    <!--<listener>-->
+        <!--<listener-class>com.sun.faces.config.ConfigureListener</listener-class>-->
+    <!--</listener>-->
+    <!--<servlet>-->
+        <!--<servlet-name>Faces Servlet</servlet-name>-->
+        <!--<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>-->
+        <!--<load-on-startup>1</load-on-startup>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>Faces Servlet</servlet-name>-->
+        <!--<url-pattern>*.faces</url-pattern>-->
+    <!--</servlet-mapping>-->
+    <!--<servlet>-->
+        <!--<servlet-name>maphandler</servlet-name>-->
+        <!--<servlet-class>com.supermap.web.handlers.MapHandler</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>maphandler</servlet-name>-->
+        <!--<url-pattern>/maphandler</url-pattern>-->
+    <!--</servlet-mapping>-->
+    <!--<servlet>-->
+        <!--<servlet-name>commonhandler</servlet-name>-->
+        <!--<servlet-class>com.supermap.web.handlers.CommonHandler</servlet-class>-->
+        <!--<load-on-startup>1</load-on-startup>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>commonhandler</servlet-name>-->
+        <!--<url-pattern>/commonhandler</url-pattern>-->
+    <!--</servlet-mapping>-->
+    <!--<servlet>-->
+        <!--<servlet-name>datahandler</servlet-name>-->
+        <!--<servlet-class>com.supermap.web.handlers.DataHandler</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>datahandler</servlet-name>-->
+        <!--<url-pattern>/datahandler</url-pattern>-->
+    <!--</servlet-mapping>-->
+    <!--<servlet>-->
+        <!--<servlet-name>ajaxhandler</servlet-name>-->
+        <!--<servlet-class>com.supermap.web.handlers.AjaxHandler</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>ajaxhandler</servlet-name>-->
+        <!--<url-pattern>/ajaxhandler</url-pattern>-->
+    <!--</servlet-mapping>-->
+    <servlet>
+        <servlet-name>Report_FlowCtrl</servlet-name>
+        <servlet-class>mor.report.Report_FlowCtrl</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Report_FlowCtrl</servlet-name>
+        <url-pattern>/Report_FlowCtrl</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LoginManager</servlet-name>
+        <servlet-class>mor.commons.login.LoginManager</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginManager</servlet-name>
+        <url-pattern>/LoginManager</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>60</session-timeout>
+    </session-config>
+</web-app>

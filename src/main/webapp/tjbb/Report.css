@@ -1,0 +1,347 @@
+ 年份<select name="dln" id="dln" class="dropDownList" style="width:55px;">
+	<option value="2005">2005</option>
+	<option value="2006">2006</option>
+	<option value="2007">2007</option>
+	<option value="2008">2008</option>
+	<option selected="selected" value="2009">2009</option>
+	<option value="2010">2010</option>
+
+</select>
+        月份<select name="dlqsy" id="dlqsy" class="dropDownList" style="width:40px;">
+	<option selected="selected" value=""></option>
+	<option value="01">01</option>
+	<option value="02">02</option>
+	<option value="03">03</option>
+	<option value="04">04</option>
+	<option value="05">05</option>
+	<option value="06">06</option>
+	<option value="07">07</option>
+	<option value="08">08</option>
+	<option value="09">09</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+
+</select>body
+{
+    color: black;
+    font-size: 12px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    SCROLLBAR-FACE-COLOR: #dfedf2;
+    SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+    SCROLLBAR-SHADOW-COLOR: #f9f8f5;
+    SCROLLBAR-3DLIGHT-COLOR: #B8E1F9;
+    SCROLLBAR-ARROW-COLOR: #606d79;
+    SCROLLBAR-TRACK-COLOR: #f9f8f5;
+    SCROLLBAR-DARKSHADOW-COLOR: #B8E1F9;
+    font-style: normal;
+    font-family: 宋体;
+    position: static;
+    font-variant: normal;
+}
+td{font-size: 12px;}
+
+.divTable90{width:100%;height:90%;table-layout:fixed;}
+.divTable100{width:100%;height:100%;table-layout:fixed;}
+.sdiv{  width: 100%; height: 100%; overflow: auto; table-layout: fixed;}
+.sdiv96{ clear:both; overflow:auto; width:100%; height:96%;table-layout:fixed;} 
+.gzpDiv{clear: both;width: 100%;height:580px;overflow: auto; table-layout:fixed;}
+
+
+/*.defaultTable
+{
+    border-right: black 1px solid;
+    border-top: black 1px solid;
+    border-left: black 1px solid;
+    border-bottom: black 1px solid;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+}*/
+.defaultTable
+{
+    border-right: 1px solid;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+}
+.defaultTable td
+{
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+	border-top: 1px solid;
+	border-left: 1px solid;
+	padding-bottom: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-left: 1px;
+	border-collapse: collapse;
+	background-color: #ffffff;
+	height: 20px;
+
+	
+}
+.defaultTable th
+{
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+	border-top: 1px solid;
+	border-left: 1px solid;
+	padding-bottom: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-left: 1px;
+	border-collapse: collapse;
+	background-color: #ffffff;
+	height: 20px;
+
+	
+}
+.whiteButtonCss
+{
+	BORDER-RIGHT: 0px;	BORDER-TOP: 0px;FONT-SIZE: 12px;BACKGROUND: url(../images/btn_80.gif) no-repeat;	BORDER-LEFT: 0px;WIDTH: 80px;CURSOR: hand;LINE-HEIGHT: 23px;	BORDER-BOTTOM: 0px;	HEIGHT: 22px;	color:#003366;
+}
+
+/* 普通文本框 */
+.grayinput
+{
+    font-size: 9pt;
+    color: black;
+    width: 120px;
+    font-style: normal;
+    font-family: 宋体;
+    font-variant: normal;
+    background-color: transparent;
+    border-right: white thin;
+    border-top: white thin;
+    border-left: white thin;
+    border-bottom: white thin;
+}
+/*.n0
+{
+    font-size: 9pt;
+    color: black;
+    width: 50px;
+    font-style: normal;
+    font-family: 宋体;
+    font-variant: normal;
+    cursor: hand;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: none;
+    border-right: white thin solid;
+    border-top: white thin solid;
+    border-left: white thin solid;
+    border-bottom: white thin solid;
+}*/
+
+/*用来控制输入表格 各报表 线别 长度为8位数字  位置*/
+.n1
+{
+    font-size: 9pt;
+    color: black;
+    width: 50px;
+    font-style: normal;
+    font-family: 宋体;
+    font-variant: normal;
+    cursor: hand;
+    border-width:0px;    
+}
+/*用来控制输入表格  各报表 变电所 位置  报表8  报表3*/
+.n2
+{
+    font-size: 9pt;
+    color: black;
+    width: 85px;
+    font-style: normal;
+    font-family: 宋体;
+    font-variant: normal;
+    cursor: hand;
+    border-width:0px;
+}
+/*用来控制输入表格 各报表 附注 位置 报表7--工作项目*/
+.n3
+{
+    font-size: 9pt;
+    color: black;
+    width: 120px;
+    font-style: normal;
+    font-family: 宋体;
+    font-variant: normal;
+    cursor:hand;
+    border-width:0px;
+}
+/*用来控制输入表格 长度为10位数字*/
+.n4
+{
+    font-size: 9pt;
+    color: black;
+    width: 58px;
+    font-style: normal;
+    font-family: 宋体;
+    font-variant: normal;
+    cursor:hand;
+    border-width:0px;
+}
+/*用来控制输入表格 报表的序号 长度为3位数字 */
+.n5
+{
+    font-size: 9pt;
+    color: black;
+    width: 20px;
+    font-style: normal;
+    font-family: 宋体;
+    font-variant: normal;
+    cursor:hand;
+    border-width:0px;
+}
+
+/*用来控制输入表格 时间*/
+.n6
+{
+    font-size: 9pt;
+    color: black;
+    width: 115px;
+    font-style: normal;
+    font-family: 宋体;
+    font-variant: normal;
+    cursor:hand;
+    border-width:0px;
+}
+
+/*用来控制输入表格 %  长度为6位数字*/
+.n7
+{
+    font-size: 9pt;
+    color: black;
+    width: 35px;
+    font-style: normal;
+    font-family: 宋体;
+    font-variant: normal;
+    cursor:hand;
+    border-width:0px;
+}
+
+/*用来控制输入表格 长度为10位数字 报表1 下面的统计*/
+.n8
+{
+    border-bottom-color:Black;
+    border-left:0px;
+    border-right:0px;
+    border-top:0px;
+    border-bottom:1px;
+}
+
+/*用来控制输入表格*/
+.customDiv1
+{
+	clear: both;
+	width: 100%;
+	height: 500px;
+	overflow: auto;
+	
+}
+
+/* 层中的表格 */
+.customDiv1 table
+{
+   float:inherit;
+}
+
+.customDiv1 td
+{
+	height: 20px;
+ }
+ 
+ .divStyle
+{
+    cursor: hand;
+    display: block;
+    float: left;
+    font-weight: bolder;
+    font-size: 14px;
+    text-transform: none;
+    color: black;
+    font-family: 宋体;
+    font-variant: normal;
+    line-height: 20px;
+}
+.divStyle1
+{
+    cursor: default;
+    display: block;
+ 
+}
+
+  .input
+     {
+    font-style: normal;
+    font-family: 宋体;
+    font-variant: normal;
+    cursor: hand;
+    border-right: white thin solid;
+    border-top: white thin solid;
+    border-left: white thin solid;
+    border-bottom: white thin solid;
+    width:88%;}
+
+.leftside
+{
+    border-right: none;
+    border-top: black 1px solid;
+    border-left: black 1px solid;
+    border-bottom: black 1px solid;
+    border-collapse: collapse;
+}
+
+/* 月报标头样式 */
+.monthHeadText
+{
+    font-family: 宋体;
+    font-variant: normal;
+	color:Black;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+/*工作票表格*/
+.tb
+{
+	border-right: #000000 1px solid;
+	border-top: #000000 1px solid;
+	border-left: #000000 1px solid;
+	border-bottom: #000000 1px solid;
+	border-collapse: collapse;
+	background-color: #ffffff;
+	text-align: center;
+	font-size: 12px;	
+}
+.tb td
+{
+    height:20px;
+    }
+    .tableHeadText
+{
+    font-size:14pt;
+    font-family:宋体;
+    text-align: center;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: normal;
+}
+.input1
+       {
+       border-top-style: none;
+       border-bottom: black 1px solid;
+       border-right-style: none;
+       border-left-style: none;
+       }

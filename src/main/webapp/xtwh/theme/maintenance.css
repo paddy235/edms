@@ -1,0 +1,21 @@
+TABLE {
+	background-color: #CCCCCC;
+	font-size: 9pt
+}
+
+TR {
+	color: black;
+	height: 22px;
+	background-color: white
+}
+
+TR.header{
+ 	color: #996600;
+	height: 22px;
+	background-color: #EBEBEB
+}
+
+CAPTION {
+	font-size: 12pt;
+	font-weight: bold
+}

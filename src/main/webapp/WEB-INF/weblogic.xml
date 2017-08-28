@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='GB2312'?>
+<weblogic-web-app xmlns="http://www.bea.com/ns/weblogic/90">
+	<session-descriptor>
+		<timeout-secs>600</timeout-secs>
+		<cookie-name>JSESSIONID1</cookie-name>
+		<invalidation-interval-secs>600</invalidation-interval-secs>
+		
+	</session-descriptor>
+
+	<container-descriptor>
+		<prefer-web-inf-classes>true</prefer-web-inf-classes>
+	</container-descriptor>
+</weblogic-web-app>
