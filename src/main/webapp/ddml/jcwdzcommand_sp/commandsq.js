@@ -220,7 +220,7 @@ Ext.onReady(function() {
         store:store,
     	cm: columns,
     	sm: sm,
-        title: '工区倒闸命令',
+        title: '接触网隔开倒闸命令',
         //列重新计算后自动填满
         viewConfig:{
         	forceFit:true,
@@ -332,7 +332,7 @@ Ext.onReady(function() {
         store:store_zy,
     	cm: columns_zy,
     	sm: new Ext.grid.RowSelectionModel({singleSelcet:true}),
-        title: '工区倒闸命令编制',
+        title: '接触网隔开倒闸命令编制',
         //列重新计算后自动填满
         viewConfig:{
         	forceFit:true,
@@ -368,7 +368,7 @@ Ext.onReady(function() {
      	var simpleFormZy_Save = new Ext.FormPanel({
               renderTo : document.body,
               labelAlign : 'left',
-              title : '工区倒闸命令编制',
+              title : '接触网隔开倒闸命令编制',
               buttonAlign : 'right',
               bodyStyle : 'padding:5px',
               //width : 800,

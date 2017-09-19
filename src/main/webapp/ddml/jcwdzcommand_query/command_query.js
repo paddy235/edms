@@ -323,7 +323,7 @@ Ext.onReady(function() {
 	var simpleForm_Query = new Ext.FormPanel({
               renderTo : document.body,
               labelAlign : 'left',
-              title : '工区倒闸命令查询—设置查询条件',
+              title : '接触网隔开倒闸命令查询—设置查询条件',
               buttonAlign : 'right',
               bodyStyle : 'padding:5px',
               //width : 600,

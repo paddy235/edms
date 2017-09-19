@@ -238,7 +238,7 @@ Ext.onReady(function() {
         store:store_zy,
     	cm: columns_zy,
     	sm:sm,
-        title: '变电所停电作业命令编制',
+        title: '停电作业命令编制',
         //列重新计算后自动填满
         viewConfig:{
         	forceFit:true,
@@ -274,7 +274,7 @@ Ext.onReady(function() {
      	var simpleFormZy_Save = new Ext.FormPanel({
               renderTo : document.body,
               labelAlign : 'left',
-              title : '变电所停电作业命令编制',
+              title : '停电作业命令编制',
               buttonAlign : 'right',
               bodyStyle : 'padding:5px',
               //width : 800,

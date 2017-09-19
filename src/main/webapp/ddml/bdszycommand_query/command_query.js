@@ -329,7 +329,7 @@ Ext.onReady(function() {
 	var simpleForm_Query = new Ext.FormPanel({
               renderTo : document.body,
               labelAlign : 'left',
-              title : '变电所停电作业命令查询—设置查询条件',
+              title : '停电作业命令查询—设置查询条件',
               buttonAlign : 'right',
               bodyStyle : 'padding:5px',
               //width : 600,

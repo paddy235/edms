@@ -139,9 +139,9 @@ window.onload = function()
 	item40 = new TaskMenuItem("变配电所第三种票编辑","../Menu_XpStyle/Image/apply.gif","parent.contents.location.href='bdsdszgzpsq_dd/gzpsq.jsp'");
 	
 	item7 = new TaskMenuItem("停电作业工作票申请","../Menu_XpStyle/Image/apply.gif","parent.contents.location.href='gqtdzygzpsq/gzpsq.jsp'");
-	item8 = new TaskMenuItem("停电作业工作票申批","../Menu_XpStyle/Image/review.gif","parent.contents.location.href='gqtdzygzpsp/gzpsp.jsp'");
-	item9 = new TaskMenuItem("停电作业工作票查询","../Menu_XpStyle/Image/search.gif","parent.contents.location.href='gzpcx_gqtdzy/gzpcx.jsp'");
-	item70 = new TaskMenuItem("停电作业工作票编辑","../Menu_XpStyle/Image/apply.gif","parent.contents.location.href='gqtdzygzpsq_dd/gzpsq.jsp'");
+	item8 = new TaskMenuItem("接触网停电作业工作票申批","../Menu_XpStyle/Image/review.gif","parent.contents.location.href='gqtdzygzpsp/gzpsp.jsp'");
+	item9 = new TaskMenuItem("接触网停电作业工作票查询","../Menu_XpStyle/Image/search.gif","parent.contents.location.href='gzpcx_gqtdzy/gzpcx.jsp'");
+	item70 = new TaskMenuItem("接触网停电作业工作票编辑","../Menu_XpStyle/Image/apply.gif","parent.contents.location.href='gqtdzygzpsq_dd/gzpsq.jsp'");
 	
 	item10 = new TaskMenuItem("带电作业工作票申请","../Menu_XpStyle/Image/apply.gif","parent.contents.location.href='gqddzygzpsq/gzpsq.jsp'");
 	item11 = new TaskMenuItem("带电作业工作票申批","../Menu_XpStyle/Image/review.gif","parent.contents.location.href='gqddzygzpsp/gzpsp.jsp'");
@@ -156,7 +156,7 @@ window.onload = function()
 	////6:工区级别，5：车间，4：段，3：电调，2：局，1：部
 	taskMenu1 = new TaskMenu("变电所第一种票");
 	taskMenu2 = new TaskMenu("变配电所第三种票");
-	taskMenu4 = new TaskMenu("停电作业工作票");
+	taskMenu4 = new TaskMenu("接触网停电作业工作票");
 	taskMenu5 = new TaskMenu("带电作业工作票");
 	taskMenu6 = new TaskMenu("倒闸作业票");
 	   //作业计划
@@ -188,9 +188,9 @@ window.onload = function()
 		taskMenu6.add(item130);
 		
 		taskMenu1.init();
-		taskMenu2.init();
+//		taskMenu2.init();
 		taskMenu4.init();
-		taskMenu5.init();
+//		taskMenu5.init();
 		taskMenu6.init();
 		}else if(dwjb=="2")
 		{

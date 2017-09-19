@@ -129,19 +129,19 @@ window.onload = function()
 	
    
    
-    item9 = new TaskMenuItem("变电所停电作业命令编制","../Menu_XpStyle/Image/order.gif","parent.contents.location.href='bdszycommand_sp/commandsp.jsp'");
-    item10 = new TaskMenuItem("变电所停电作业命令执行","../Menu_XpStyle/Image/order.gif","parent.contents.location.href='bdszycommand_zx/commandsp.jsp'");
-    item11 = new TaskMenuItem("变电所停电作业命令查询","../Menu_XpStyle/Image/search.gif","parent.contents.location.href='bdszycommand_query/command_query.jsp'");
-    item011 = new TaskMenuItem("变电所停电作业命令记录","../Menu_XpStyle/Image/order.gif","parent.contents.location.href='bdszycommand_sp/command.jsp'");
-	
-  	item52 = new TaskMenuItem("倒闸操作命令记录","../Menu_XpStyle/Image/order.gif","parent.contents.location.href='jcwdzcommand_sp/commandsp.jsp'");
-    item53 = new TaskMenuItem("工区倒闸命令执行","../Menu_XpStyle/Image/search.gif","parent.contents.location.href='jcwdzcommand_zx/commandsp.jsp'");
-	item54 = new TaskMenuItem("倒闸操作命令查询","../Menu_XpStyle/Image/search.gif","parent.contents.location.href='jcwdzcommand_query/command_query.jsp'");
+    item9 = new TaskMenuItem("停电作业命令编制","../Menu_XpStyle/Image/order.gif","parent.contents.location.href='bdszycommand_sp/commandsp.jsp'");
+    item10 = new TaskMenuItem("停电作业命令执行","../Menu_XpStyle/Image/order.gif","parent.contents.location.href='bdszycommand_zx/commandsp.jsp'");
+    item11 = new TaskMenuItem("停电作业命令查询","../Menu_XpStyle/Image/search.gif","parent.contents.location.href='bdszycommand_query/command_query.jsp'");
+    item011 = new TaskMenuItem("停电作业命令记录","../Menu_XpStyle/Image/order.gif","parent.contents.location.href='bdszycommand_sp/command.jsp'");
 
-	item55 = new TaskMenuItem("变电所倒闸命令编制","../Menu_XpStyle/Image/order.gif","parent.contents.location.href='bdsdzcommand_sp/commandsp.jsp'");
-    item56 = new TaskMenuItem("变电所倒闸命令执行","../Menu_XpStyle/Image/search.gif","parent.contents.location.href='bdsdzcommand_zx/commandsp.jsp'");
-	item57 = new TaskMenuItem("变电所倒闸命令查询","../Menu_XpStyle/Image/search.gif","parent.contents.location.href='bdsdzcommand_query/command_query.jsp'");
-	item057 = new TaskMenuItem("变电所倒闸命令记录","../Menu_XpStyle/Image/order.gif","parent.contents.location.href='bdsdzcommand_sp/command.jsp'");
+  	item52 = new TaskMenuItem("接触网隔开倒闸命令记录","../Menu_XpStyle/Image/order.gif","parent.contents.location.href='jcwdzcommand_sp/commandsp.jsp'");
+    item53 = new TaskMenuItem("工区倒闸命令执行","../Menu_XpStyle/Image/search.gif","parent.contents.location.href='jcwdzcommand_zx/commandsp.jsp'");
+	item54 = new TaskMenuItem("接触网隔开倒闸命令查询","../Menu_XpStyle/Image/search.gif","parent.contents.location.href='jcwdzcommand_query/command_query.jsp'");
+
+	item55 = new TaskMenuItem("倒闸命令编制","../Menu_XpStyle/Image/order.gif","parent.contents.location.href='bdsdzcommand_sp/commandsp.jsp'");
+    item56 = new TaskMenuItem("倒闸命令执行","../Menu_XpStyle/Image/search.gif","parent.contents.location.href='bdsdzcommand_zx/commandsp.jsp'");
+	item57 = new TaskMenuItem("倒闸命令查询","../Menu_XpStyle/Image/search.gif","parent.contents.location.href='bdsdzcommand_query/command_query.jsp'");
+	item057 = new TaskMenuItem("倒闸命令记录","../Menu_XpStyle/Image/order.gif","parent.contents.location.href='bdsdzcommand_sp/command.jsp'");
 	
 	item58 = new TaskMenuItem("系统调度命令管理","../Menu_XpStyle/Image/order.gif","parent.contents.location.href='xtddml/xtddml.jsp'");
 	
@@ -159,7 +159,7 @@ window.onload = function()
 		  
 		if(dwid=="021")
 		{
-			taskMenu4 = new TaskMenu("牵引变电所倒闸命令管理");
+			taskMenu4 = new TaskMenu("倒闸命令管理");
 		taskMenu4.add(item55);
 		taskMenu4.add(item56);
 		taskMenu4.add(item57);
@@ -171,8 +171,8 @@ window.onload = function()
      	taskMenu6.add(item59);
 		 taskMenu6.add(item60);
 		 taskMenu6.add(item61);
-		 taskMenu6.init();
-			taskMenu3 = new TaskMenu("变电所作业命令管理");
+//		 taskMenu6.init();
+			taskMenu3 = new TaskMenu("停电作业命令管理");
      	taskMenu3.add(item9);
 		taskMenu3.add(item10);
 		taskMenu3.add(item11);
@@ -181,8 +181,8 @@ window.onload = function()
 		taskMenu1.add(item52);
 		taskMenu1.add(item53);
 		taskMenu1.add(item54);
-		taskMenu1.init();
-		taskMenu2 = new TaskMenu("倒闸操作命令管理");
+//		taskMenu1.init();
+		taskMenu2 = new TaskMenu("接触网隔开倒闸命令管理");
 		taskMenu2.add(item6);
 		taskMenu2.add(item7);
 		taskMenu2.add(item8);
@@ -210,15 +210,15 @@ window.onload = function()
 		 //taskMenu6.add(item60);
 		 taskMenu6.add(item61);
 		 taskMenu6.add(item061);
-		 taskMenu6.init();
-		taskMenu3 = new TaskMenu("变电所作业命令管理");
+//		 taskMenu6.init();
+		taskMenu3 = new TaskMenu("停电作业命令管理");
      	taskMenu3.add(item9);
 		//taskMenu3.add(item10);
 		taskMenu3.add(item11);
 		 taskMenu3.add(item011);
 		taskMenu3.init();
 
-	taskMenu1 = new TaskMenu("倒闸操作命令管理");
+	taskMenu1 = new TaskMenu("接触网隔开倒闸命令管理");
 		taskMenu1.add(item52);
 		//taskMenu1.add(item53);
 		taskMenu1.add(item54);
@@ -228,7 +228,7 @@ window.onload = function()
 		//taskMenu2.add(item7);
 		taskMenu2.add(item8);
 		taskMenu2.add(item08);
-		taskMenu2.init();
+//		taskMenu2.init();
 
 
 	    
@@ -239,7 +239,7 @@ window.onload = function()
 		 taskMenu5 = new TaskMenu("系统调度命令管理");
      	taskMenu5.add(item58);
  
-		taskMenu5.init();	
+		taskMenu5.init();
 	}
 	else if(dwjb=="2")
 	{

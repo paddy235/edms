@@ -381,7 +381,7 @@ Ext.onReady(function() {
                                             layout : 'form',
                                             border : false,
                                             items : [{
-                                                         xtype : 'textfield',// 控件的类型为datefield
+                                                         xtype : 'textarea',// 控件的类型为datefield
                                                          fieldLabel : '通知内容',
                                                          name : 'TZNR',
                                                          anchor : '98%',
