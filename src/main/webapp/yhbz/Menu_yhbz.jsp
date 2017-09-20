@@ -31,8 +31,9 @@ window.onload = function()
 {
 	TaskMenu.setHeadMenuSpecial(false);
 	TaskMenu.setScrollbarEnabled(false);
-    item10 = new TaskMenuItem("系统使用说明","../Menu_XpStyle/Image/update.gif","parent.window.frames[1].location.href='sysm.htm'");
-    item11 = new TaskMenuItem("系统维护说明","../Menu_XpStyle/Image/update.gif","parent.window.frames[1].location.href='whsm.htm'");
+//    item10 = new TaskMenuItem("系统使用说明","../Menu_XpStyle/Image/update.gif","parent.window.frames[1].location.href='sysm.htm'");
+    item10 = new TaskMenuItem("系统使用说明","../Menu_XpStyle/Image/update.gif","parent.window.frames[1].location.href='神朔铁路供电管理信息系统用户手册--用户版201500430.doc'");
+//    item11 = new TaskMenuItem("系统维护说明","../Menu_XpStyle/Image/update.gif","parent.window.frames[1].location.href='whsm.htm'");
     
 	
 
