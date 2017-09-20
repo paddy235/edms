@@ -143,11 +143,13 @@ Ext.onReady(function () {
             tsbsimpleForm_Save.buttons[1].setVisible(true);
             tsbsimpleForm_Save.buttons[3].setVisible(true);
             tsbsimpleForm_Save.buttons[4].setVisible(true);
+            tsbsimpleForm_Save.buttons[5].setVisible(true);
         }
         else if (zt == "1") {
-            tsbsimpleForm_Save.buttons[1].setVisible(false);
-            tsbsimpleForm_Save.buttons[3].setVisible(false);
+            // tsbsimpleForm_Save.buttons[1].setVisible(false);
+            // tsbsimpleForm_Save.buttons[3].setVisible(false);
             tsbsimpleForm_Save.buttons[4].setVisible(false);
+            tsbsimpleForm_Save.buttons[5].setVisible(false);
         }
         else if (zt == "2") {
             tsbsimpleForm_Save.buttons[5].setVisible(true);
@@ -393,8 +395,8 @@ Ext.onReady(function () {
             handler: function () {
                 tsbsimpleForm_Save.form.reset();
                 tsbsimpleForm_Save.buttons[0].setVisible(true);
-                tsbsimpleForm_Save.buttons[1].setVisible(false);
-                tsbsimpleForm_Save.buttons[3].setVisible(false);
+                // tsbsimpleForm_Save.buttons[1].setVisible(false);
+                // tsbsimpleForm_Save.buttons[3].setVisible(false);
                 tsbsimpleForm_Save.buttons[4].setVisible(false);
                 tsbsimpleForm_Save.buttons[5].setVisible(false);
             }
@@ -403,8 +405,8 @@ Ext.onReady(function () {
             Enabled: false,
             handler: function () {
                 tsbsimpleForm_Save.buttons[0].setVisible(true);
-                tsbsimpleForm_Save.buttons[1].setVisible(false);
-                tsbsimpleForm_Save.buttons[3].setVisible(false);
+                // tsbsimpleForm_Save.buttons[1].setVisible(false);
+                // tsbsimpleForm_Save.buttons[3].setVisible(false);
                 tsbsimpleForm_Save.buttons[4].setVisible(false);
                 tsbsimpleForm_Save.buttons[5].setVisible(false);
                 if (!tsbsimpleForm_Save.form.isValid()) {
@@ -433,8 +435,8 @@ Ext.onReady(function () {
             text: '·¢ËÍÁÐµ÷',
             handler: function () {
                 tsbsimpleForm_Save.buttons[0].setVisible(true);
-                tsbsimpleForm_Save.buttons[1].setVisible(false);
-                tsbsimpleForm_Save.buttons[3].setVisible(false);
+                // tsbsimpleForm_Save.buttons[1].setVisible(false);
+                // tsbsimpleForm_Save.buttons[3].setVisible(false);
                 tsbsimpleForm_Save.buttons[4].setVisible(false);
                 tsbsimpleForm_Save.buttons[5].setVisible(false);
                 if (!tsbsimpleForm_Save.form.isValid()) {
@@ -463,8 +465,8 @@ Ext.onReady(function () {
             handler: function () {
                 tsbsimpleForm_Save.buttons[0].setVisible(true);
                 tsbsimpleForm_Save.buttons[2].setVisible(true);
-                tsbsimpleForm_Save.buttons[1].setVisible(false);
-                tsbsimpleForm_Save.buttons[3].setVisible(false);
+                // tsbsimpleForm_Save.buttons[1].setVisible(false);
+                // tsbsimpleForm_Save.buttons[3].setVisible(false);
                 tsbsimpleForm_Save.buttons[4].setVisible(false);
                 tsbsimpleForm_Save.buttons[5].setVisible(false);
                 if (!tsbsimpleForm_Save.form.isValid()) {
@@ -497,8 +499,8 @@ Ext.onReady(function () {
         items: [tsbsimpleForm_Save, tsbsimple_Grid]
 
     });
-    tsbsimpleForm_Save.buttons[1].setVisible(false);
-    tsbsimpleForm_Save.buttons[3].setVisible(false);
+    // tsbsimpleForm_Save.buttons[1].setVisible(false);
+    // tsbsimpleForm_Save.buttons[3].setVisible(false);
     tsbsimpleForm_Save.buttons[4].setVisible(false);
     tsbsimpleForm_Save.buttons[5].setVisible(false);
 });
