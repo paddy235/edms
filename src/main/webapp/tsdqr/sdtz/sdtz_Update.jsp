@@ -39,7 +39,8 @@ String sql="";
 			+"SD_DDT='"+SD_DDT+"',"
 			+"SD_DDY='"+SD_DDY+"',"
 			+"SD_BZ='"+SD_BZ+"',"
-			+"ZT='"+ZT+"'"
+			+"ZT='"+ZT+"',"
+			+"SJC=sysdate"
 			+" WHERE SDTZBH="+SDTZBH;
 			
 		//System.out.println("+====+"+sql);

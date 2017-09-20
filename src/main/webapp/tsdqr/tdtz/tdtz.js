@@ -139,6 +139,7 @@ Ext.onReady(function () {
         var record = tsbsimple_Grid.getStore().getAt(rowIndex);
         tsbsimpleForm_Save.getForm().loadRecord(record);
         var zt = record.get('ZT');
+        tsbsimpleForm_Save.buttons[5].setVisible(false);
         if (zt == "0") {
             tsbsimpleForm_Save.buttons[1].setVisible(true);
             tsbsimpleForm_Save.buttons[3].setVisible(true);

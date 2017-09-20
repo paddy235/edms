@@ -34,13 +34,14 @@ try {
 		index=index-pageSize;
 	}
 	
-	String sql_Query="select * from (select rownum xh,temp.* from (select t.*,to_char(t.TDSJ,'yyyy-mm-dd hh24:mi') TDSJ1,to_char(t.TD_XDSJ,'yyyy-mm-dd hh24:mi') TD_XDSJ1,to_char(t.TD_DDSJ,'yyyy-mm-dd hh24:mi') TD_DDSJ1,s.xdtmc,r.ddtmc from z_tsdqr_tdtz t,j_gyjc_xdtzd s,j_gyjc_ddtzd r where t.td_xdt=s.xdtdm and t.td_ddt=r.ddtdm and "+ whereclause +" order by TDSJ desc) temp) where xh between "+ (index+1) +" and "+ (pageSize + index);
+	String sql_Query="select * from (select rownum xh,temp.* from (select t.*,to_char(t.SJC,'yyyy-mm-dd hh24:mi') TDSJC,to_char(t.TDSJ,'yyyy-mm-dd hh24:mi') TDSJ1,to_char(t.TD_XDSJ,'yyyy-mm-dd hh24:mi') TD_XDSJ1,to_char(t.TD_DDSJ,'yyyy-mm-dd hh24:mi') TD_DDSJ1,s.xdtmc,r.ddtmc from z_tsdqr_tdtz t,j_gyjc_xdtzd s,j_gyjc_ddtzd r where t.td_xdt=s.xdtdm and t.td_ddt=r.ddtdm and "+ whereclause +" order by TDSJ desc) temp) where xh between "+ (index+1) +" and "+ (pageSize + index);
 	//System.out.println(sql_Query);
 	java.sql.ResultSet gridResultSet=db_connection.executeQuery(sql_Query);
 
     String json = "{totalCount:" +totalCount +",root:[";
 
     while(gridResultSet.next()){
+		String zt = gridResultSet.getString("ZT");
 		json += "{TDTZBH:" +gridResultSet.getLong("TDTZBH")  +
         		",TDSJ:'"+ CheckSting(gridResultSet.getString("TDSJ1"))+"'"+
         		",TDSF:'"+ CheckSting(gridResultSet.getString("TDSF"))+"'"+
@@ -56,7 +57,8 @@ try {
         		",TD_BZ:'"+ CheckSting(gridResultSet.getString("TD_BZ"))+"'"+
 				",xdtmc:'"+ CheckSting(gridResultSet.getString("xdtmc"))+"'"+
 				",ddtmc:'"+ CheckSting(gridResultSet.getString("ddtmc"))+"'"+
-        		",ZT:'"+ CheckSting(gridResultSet.getString("ZT"))+"'},";
+				",SJC:'" + ("9".equals(zt) ? CheckSting(gridResultSet.getString("tDSJC")) : "") + "'" +
+        		",ZT:'"+ CheckSting(zt)+"'},";
 	}
 	
     if (totalCount!=0)

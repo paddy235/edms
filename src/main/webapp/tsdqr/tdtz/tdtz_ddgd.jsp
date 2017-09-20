@@ -26,8 +26,9 @@ String ZT ="9";
 String sql="";
 	try 
 	{
-		sql="UPDATE Z_TSDQR_TDTZ SET "					
-			+"ZT='"+ZT+"'"
+		sql="UPDATE Z_TSDQR_TDTZ SET "
+			+"ZT='"+ZT+"',"
+			+"SJC=sysdate"
 			+" WHERE TDTZBH="+TDTZBH;
 			
 		//System.out.println("+====+"+sql);

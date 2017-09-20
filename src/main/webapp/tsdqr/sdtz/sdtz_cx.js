@@ -71,7 +71,8 @@ Ext.onReady(function() {
 		{header:'电调时间',dataIndex:'SD_DDSJ',width:110,sortable:true,fixed:true},
         {header:'电调员',dataIndex:'SD_DDY',width:60,sortable:true,fixed:true},
         {header:'备注',dataIndex:'SD_BZ',width:100,sortable:true},
-        {header:'状态',dataIndex:'ZT',width:150,renderer:renderzt1,fixed:true}
+        {header:'状态',dataIndex:'ZT',width:150,renderer:renderzt1,fixed:true},
+        {header:'归档时间',dataIndex:'SJC',width:110,sortable:true,fixed:true}
     ]);
    
     var tsbplanRecord = Ext.data.Record.create([
@@ -89,7 +90,8 @@ Ext.onReady(function() {
     	{name:'SD_DDT',type:'string'},
     	{name:'SD_DDY',type:'string'},
 		{name:'SD_BZ',type:'string'},
-    	{name:'ZT',type:'string'}
+        {name:'ZT',type:'string'},
+        {name:'SJC',type:'string'}
     	]);
     var whereclause_init=" 1=1 ";
     var tsbstore = new Ext.data.Store({
