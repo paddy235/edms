@@ -71,14 +71,14 @@ Ext.onReady(function () {
     ]);
 
     var tsbplanRecord = Ext.data.Record.create([
-        {name: 'TDTZBH', type: 'int'},
+        // {name: 'TDTZBH', type: 'int'},
         {name: 'TDSJ', type: 'string'},
         {name: 'TDSF', type: 'string'},
         {name: 'TDGDB', type: 'string'},
-        {name: 'TDNR', type: 'string'},
+        // {name: 'TDNR', type: 'string'},
         {name: 'TD_XDMLH', type: 'string'},
         {name: 'TD_XDSJ', type: 'string'},
-        {name: 'TD_XDT', type: 'string'},
+        // {name: 'TD_XDT', type: 'string'},
         {name: 'TD_XDY', type: 'string'},
         {name: 'TD_DDMLH', type: 'string'},
         {name: 'TD_DDSJ', type: 'string'},
