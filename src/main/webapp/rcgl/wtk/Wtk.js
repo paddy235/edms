@@ -312,6 +312,7 @@ Ext.onReady(function(){
          },
          {
                	text : '´òÓ¡¼ÇÂ¼',
+             hidden: true,
 				handler : function() {
 					   ryshow(where1);
 				}

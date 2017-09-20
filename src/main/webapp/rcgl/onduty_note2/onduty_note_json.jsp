@@ -65,7 +65,7 @@
         DbTrade db_connection = new DbTrade();
 
 
-        String sql_Query_count = "select count(*) from z_yxgl_zbjs where " + whereclause_onduty;
+        String sql_Query_count = "select count(*) from z_yxgl_zbjs2 where " + whereclause_onduty;
 
         System.out.println("sql_Query_count:" + sql_Query_count);
 
@@ -83,7 +83,7 @@
         //System.out.println(0%10);
 
 
-        String sql_Query = "select * from (select rownum xh,temp.* from (select * from z_yxgl_zbjs where " + whereclause_onduty + " order by jssj desc) temp) where xh between " + (index + 1) + " and " + (pageSize + index);
+        String sql_Query = "select * from (select rownum xh,temp.* from (select * from z_yxgl_zbjs2 where " + whereclause_onduty + " order by jssj desc) temp) where xh between " + (index + 1) + " and " + (pageSize + index);
 
         //out.println(sql_Query);
         System.out.println(sql_Query);

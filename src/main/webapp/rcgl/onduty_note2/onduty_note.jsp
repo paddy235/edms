@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=GBK" pageEncoding="GBK" %>
-<%@ include file="../../share/CheckDateorStr.jsp" %>
 
+    
 
 <html>
   	<head>
 
-    	<title>跳闸记录查询</title>
+    	<title>值班记事</title>
     
 		<meta http-equiv="pragma" content="no-cache">
 		<meta http-equiv="cache-control" content="no-cache">
@@ -16,7 +16,7 @@
 		<link rel="stylesheet" type="text/css" href="../../extjs-3.0/resources/css/ext-all.css" />
 		<link rel="stylesheet" type="text/css" href="../../extjs-3.0/resources/css/ext-patch.css" />
 		
-		<!-- 时间控件 所用 -->
+		 <!-- 时间控件 所用 -->
         <script type="text/javascript" src="../../My97DatePicker/WdatePicker.js"></script>
     	
 		
@@ -59,32 +59,29 @@
             background-image:url(../../extjs-3.0/examples/shared/icons/save.gif) !important;
         }
     </style>
-   <%
-     String myURL="../errorpage.jsp";
-     String username="";
-     String userdj="";
-     String userdwid="";
-     String isdd="";
-     if(session.getAttribute("YHMC")!=null)
-     {
-        username=session.getAttribute("YHMC").toString();
-        userdj=session.getAttribute("DWJB").toString();
-        userdwid=session.getAttribute("DWDM").toString();
-        //isdd=session.getAttribute("isdd").toString();
-     }
-     else
-     {
-        response.sendRedirect(myURL);
-     }
-    %>
-   	
+    	
+   	   <%
+		String myURL="../../errorpage.jsp";
+		String userDwid="";
+		String yhmc="";
+		if(session.getAttribute("userDwid")==null||session.getAttribute("ddtmc")==null)
+		{
+			response.sendRedirect(myURL);
+		}
+		else
+		{
+		    yhmc=session.getAttribute("YHMC").toString();
+		    userDwid=session.getAttribute("userDwid").toString();
+		}
+   %>
    </head>
-     
+  
   	<body>
-  	     <input type="hidden" value="<%=userdj %>" id="userdj" >
-  	     <input type="hidden" value="<%=username %>" id="txt_username" >
-  	     <input type="hidden" value="<%=userdwid %>" id="userdwid" >
-  	     <input type="hidden" value="<%=TTYHMC(userdwid,userdj)%>" id="ttyhmc" >
-         <script type="text/javascript" src="remotefault_query.js"></script>
+  		 
+  		 <input type="hidden" id="yhmc" value="<%=yhmc%>"> 
+  	     <input type="hidden" id="userDwid" value="<%=userDwid %>"> 
+         <script type="text/javascript" src=onduty_note.js></script>   
+        
+          
 	</body>
 </html>

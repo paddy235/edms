@@ -75,7 +75,7 @@ try {
 
     DbTrade db_connection=new DbTrade();
 	
-	String sql_Query_count="select count(*) from (select yd.*,gq.gqdm as dm,gq.ddtdm from Z_XXGX_YDGZBG yd,j_gyjc_gqzd gq where gq.gqpym=yd.gqpym) gz,j_gyjc_gqzd gq where  gz.gqpym=gq.gqpym and "+whereclause;
+	String sql_Query_count="select count(*) from (select yd.*,gq.gqdm as dm,gq.ddtdm from Z_XXGX_YDGZBG2 yd,j_gyjc_gqzd gq where gq.gqpym=yd.gqpym) gz,j_gyjc_gqzd gq where  gz.gqpym=gq.gqpym and "+whereclause;
 	
 	System.out.println("sql_Query_count:"+sql_Query_count);
 	
@@ -86,8 +86,8 @@ try {
 	System.out.println(sql_Query_count);
 	//out.println(totalCount);
 	
-	String sql_Query="select * from (select rownum xh,temp.* from (select gz.*,to_char(gz.bgsj,'yyyy-mm-dd hh24:mi:ss') bgsj1,to_char(gz.fhsj,'yyyy-mm-dd hh24:mi:ss') fhsj1,to_char(gz.rksj,'yyyy-mm-dd hh24:mi:ss') rksj1,gq.gqmc,gq.gqdm from  (select yd.*,gq.gqdm as dm from Z_XXGX_YDGZBG yd,j_gyjc_gqzd gq where gq.gqpym=yd.gqpym) gz,j_gyjc_gqzd gq where  gz.gqpym=gq.gqpym  and "+ whereclause +" order by gz.bgsj desc) temp) where xh between "+ (index+1) +" and "+ (pageSize + index);
-	
+	String sql_Query="select * from (select rownum xh,temp.* from (select gz.*,to_char(gz.bgsj,'yyyy-mm-dd hh24:mi:ss') bgsj1,to_char(gz.fhsj,'yyyy-mm-dd hh24:mi:ss') fhsj1,to_char(gz.rksj,'yyyy-mm-dd hh24:mi:ss') rksj1,gq.gqmc,gq.gqdm from  (select yd.*,gq.gqdm as dm from Z_XXGX_YDGZBG2 yd,j_gyjc_gqzd gq where gq.gqpym=yd.gqpym) gz,j_gyjc_gqzd gq where  gz.gqpym=gq.gqpym  and "+ whereclause +" order by gz.bgsj desc) temp) where xh between "+ (index+1) +" and "+ (pageSize + index);
+	select gz.*,to_char(gz.bgsj,'yyyy-mm-dd hh24:mi:ss') bgsj1,to_char(gz.fhsj,'yyyy-mm-dd hh24:mi:ss') fhsj1,to_char(gz.rksj,'yyyy-mm-dd hh24:mi:ss') rksj1,gq.gqmc,gq.gqdm from  (select yd.*,gq.gqdm as dm from Z_XXGX_YDGZBG2 yd,j_gyjc_gqzd gq where gq.gqpym=yd.gqpym) gz,j_gyjc_gqzd gq where  gz.gqpym=gq.gqpym  and  gz.bgsj <=sysdate and gz.bgsj>=to_date('2017-9-01 00:00','yyyy-mm-dd hh24:mi') order by gz.bgsj desc
 	//out.println(sql_Query);
 	System.out.println("totalcount"+sql_Query);
 	java.sql.ResultSet gridResultSet=db_connection.executeQuery(sql_Query);

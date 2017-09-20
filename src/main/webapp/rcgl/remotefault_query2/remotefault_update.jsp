@@ -44,8 +44,8 @@
     }
     gridResultSet.close();
     try {
-        String sql_update = "update Z_XXGX_YDGZBG set  BGSJ=to_date('" + bgsj + "','yyyy-mm-dd hh24:mi:ss'),GQPYM='" + gqpym
-                + "',CHZZT='" + chzzt + "',GZMS='" + gzms + "',SGJL='" + sgjl + "',TZYY='" + tzyy + "',FHSJ=to_date('" + fhsj + "','yyyy-mm-dd hh24:mi:ss'),TDSF='" + tdsf + "',LB='" + lb + "',BZ='" + bz + "',DDY='" + ddy + "',bhzzmc='" + bhzzdm_mc +  "',kgh='" + "' where ydsgbm='" + ydsgbm + "'";
+        String sql_update = "update Z_XXGX_YDGZBG2 set  BGSJ=to_date('" + bgsj + "','yyyy-mm-dd hh24:mi:ss'),GQPYM='" + gqpym
+                + "',chzzt='" + chzzt + "',GZMS='" + gzms + "',SGJL='" + sgjl + "',TZYY='" + tzyy + "',FHSJ=to_date('" + fhsj + "','yyyy-mm-dd hh24:mi:ss'),TDSF='" + tdsf + "',LB='" + lb + "',BZ='" + bz + "',DDY='" + ddy + "',bhzzmc='" + bhzzdm_mc + "',kgh='" + kgh + "' where ydsgbm='" + ydsgbm + "'";
 
         System.out.println("updat:" + sql_update);
         dbTrade.executeUpdate(sql_update);

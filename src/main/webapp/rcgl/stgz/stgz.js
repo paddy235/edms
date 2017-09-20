@@ -383,6 +383,7 @@ Ext.onReady(function() {
                     },  {
                                    // 在buttons里定义的按钮默认是Ext.Button，所以按钮的属性定义可以查看Ext.Button的API。在这里两个按钮都没用到其它属性，只是设置了显示文本（text）和单击事件。
             text : '打印记录',
+                  hidden: true,
             handler : function() {
                                         //var win;
                                          

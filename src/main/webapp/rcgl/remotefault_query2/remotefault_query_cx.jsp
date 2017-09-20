@@ -85,6 +85,8 @@
   	     <input type="hidden" value="<%=username %>" id="txt_username" >
   	     <input type="hidden" value="<%=userdwid %>" id="userdwid" >
   	     <input type="hidden" value="<%=TTYHMC(userdwid,userdj)%>" id="ttyhmc" >
-         <script type="text/javascript" src="remotefault_query.js"></script>
+         <script type="text/javascript" src="remotefault_query_cx.js"></script>   
+        
+          
 	</body>
 </html>

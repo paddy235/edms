@@ -108,8 +108,10 @@ var item7;
 var item8;
 var item9;
 var item10;
+var item31;
 var item11;
 var item12;
+var item32;
 var item13;
 var item14;
 var item15;
@@ -128,10 +130,13 @@ window.onload = function()
 	//alert(jglbdm);
 	//TaskMenu.setAutoBehavior(false);
 	////////////////////////////////////////////////parent.contents.location.href
-	item11 = new TaskMenuItem("跳闸管理","../Menu_XpStyle/Image/tzjl.gif","parent.contents.location.href='remotefault_query/remotefault_query.jsp'");
+	item31 = new TaskMenuItem("跳闸管理","../Menu_XpStyle/Image/tzjl.gif","parent.contents.location.href='remotefault_query2/remotefault_query.jsp'");
+	item11 = new TaskMenuItem("牵引跳闸管理","../Menu_XpStyle/Image/tzjl.gif","parent.contents.location.href='remotefault_query/remotefault_query.jsp'");
 
     item12 = new TaskMenuItem("值班记事","../Menu_XpStyle/Image/report1.gif","parent.contents.location.href='onduty_note/onduty_note.jsp'");
+    item32 = new TaskMenuItem("设备记事","../Menu_XpStyle/Image/report1.gif","parent.contents.location.href='onduty_note2/onduty_note.jsp'");
     item13 = new TaskMenuItem("交接班管理","../Menu_XpStyle/Image/report.gif","parent.contents.location.href='change_duty/change_duty.jsp'");
+    item33 = new TaskMenuItem("值班主任交接班管理","../Menu_XpStyle/Image/report.gif","parent.contents.location.href='change_duty2/change_duty.jsp'");
     item14 = new TaskMenuItem("缺陷管理","../Menu_XpStyle/Image/qxgl.gif","parent.contents.location.href='facility_defect/facility_defect.jsp'");
     item16 = new TaskMenuItem("天窗信息","../Menu_XpStyle/Image/twindow.gif","parent.contents.location.href='dormerInfo/dormerInfo.jsp'");
 	item18=new TaskMenuItem("值班日志查询","../Menu_XpStyle/Image/twindow.gif","parent.contents.location.href='dutylog_query/dutylog_query.jsp'");
@@ -146,7 +151,7 @@ window.onload = function()
     item50 = new TaskMenuItem("牵引供电停送电登记薄","../Menu_XpStyle/Image/update.gif","parent.contents.location.href='tsddjb/tsddjb.jsp'");
     item51 = new TaskMenuItem("问题库","../Menu_XpStyle/Image/update.gif","parent.contents.location.href='wtk/Wtk.jsp'");
     item52 = new TaskMenuItem("电力设备故障记录","../Menu_XpStyle/Image/update.gif","parent.contents.location.href='dlsbgzjl/remotefault_query.jsp'");
-    item53 = new TaskMenuItem("牵引变电所值班日志","../Menu_XpStyle/Image/update.gif","parent.contents.location.href='qybdszbrz/onduty_note.jsp'");
+    item53 = new TaskMenuItem("牵引变电所值班日志","../Menu_XpStyle/Image/update.gif","parent.contents.location.href='qybdszbrz/qybdszbrz.jsp'");
     item54 = new TaskMenuItem("故障通报","../Menu_XpStyle/Image/update.gif","parent.contents.location.href='gztb/gztb.jsp'");
 
 	
@@ -158,10 +163,12 @@ window.onload = function()
 	
 
 		//日常管理		
+		taskMenu4.add(item33);
 		taskMenu4.add(item12);
 		taskMenu4.add(item13);
 		taskMenu4.add(item14);
 		taskMenu4.add(item15);
+		taskMenu4.add(item31);
 		taskMenu4.add(item11);
 		taskMenu4.add(item18);
 		taskMenu4.add(item19);
@@ -174,10 +181,11 @@ window.onload = function()
 		//taskMenu4.add(item49);
 	    taskMenu4.add(item50);
 		taskMenu4.add(item51);
-		taskMenu4.add(item52);
+//		taskMenu4.add(item52);
 
 		taskMenu4.add(item53);
 		taskMenu4.add(item54);
+		taskMenu4.add(item32);
 	taskMenu4.init();
 }
 </script>

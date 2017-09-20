@@ -11,9 +11,9 @@ Ext.onReady(function () {
         //new Ext.grid.RowNumberer(),
 
         {header: '序号', dataIndex: 'xh', width: 30},
+        {header: '汇报人', dataIndex: 'tq', width: 40, sortable: true},
         {header: '记事时间', dataIndex: 'jssj', width: 50, sortable: true},
-        {header: '天气', dataIndex: 'tq', width: 40, sortable: true},
-        {header: '是否接班人确认', dataIndex: 'sfjbrqr', width: 50, sortable: true},
+        // {header:'是否接班人确认',dataIndex:'sfjbrqr',width:50,sortable:true},
         {header: '记事内容', dataIndex: 'jsnr', width: 280, sortable: true}
         //{header:'接班人确认',dataIndex:'jbrqr',width:80,fixed:true,sortable:true}
     ]);
@@ -38,7 +38,6 @@ Ext.onReady(function () {
     var store = new Ext.data.Store({
         //proxy告诉我们从哪里获得数据
         proxy: new Ext.data.HttpProxy({url: 'onduty_note_json.jsp'}),
-        // baseParams: {whereclause: 'dwid = ' + "'" + userdwid + "' and jlr='" + yhmc + "'"},//点击翻页的时候，这个值不会消失，作为基本参数，只有点击查询按钮时才会改变
         baseParams: {whereclause: '1=1'},//点击翻页的时候，这个值不会消失，作为基本参数，只有点击查询按钮时才会改变
 
         //reader告诉我们如何解析这个数据
@@ -117,7 +116,7 @@ Ext.onReady(function () {
     var simpleForm_Save = new Ext.FormPanel({
         renderTo: document.body,
         labelAlign: 'left',
-        title: '值班记事',
+        title: '设备记事',
         buttonAlign: 'right',
         bodyStyle: 'padding:5px',
         //width : 800,
@@ -141,7 +140,7 @@ Ext.onReady(function () {
                     border: false,
                     items: [{
                         xtype: 'textfield',// 控件的类型为datefield
-                        fieldLabel: '天气',
+                        fieldLabel: '汇报人',
                         name: 'tq',
                         anchor: '90%'
 
@@ -170,6 +169,7 @@ Ext.onReady(function () {
                     columnWidth: .3,
                     layout: 'form',
                     border: false,
+                    hidden: true,
                     items: [{
                         xtype: 'combo',// 控件的类型设置成combo
                         // 这里定义了一个sotre属性，就是选择值存储的地方，因为是在客户端的数据，所以使用了一个简单存储（SimpleStore）。
@@ -367,7 +367,7 @@ Ext.onReady(function () {
     var simpleForm_Query = new Ext.FormPanel({
         renderTo: document.body,
         labelAlign: 'left',
-        title: '值班记事—查询',
+        title: '设备记事—查询',
         buttonAlign: 'right',
         bodyStyle: 'padding:5px',
         //width : 600,

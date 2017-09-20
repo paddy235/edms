@@ -7,7 +7,7 @@ Ext.onReady(function () {
             width: document.body.clientWidth - 20,
             height: document.body.clientHeight - 10,
             layout: 'column',
-            title: '牵引跳闸记录',
+            title: '跳闸记录',
             closeAction: 'hide',
             plain: true,
             autoScroll: false,
@@ -59,7 +59,7 @@ Ext.onReady(function () {
     });
     //store_bdt.load();
 
-    var sql_lb = "select distinct bg.lb,bg.lb from Z_XXGX_YDGZBG bg";
+    var sql_lb = "select distinct bg.lb,bg.lb from Z_XXGX_YDGZBG2 bg";
 
     var planRecord_lb = Ext.data.Record.create([
         {name: 'value', type: 'string'},
@@ -216,7 +216,7 @@ Ext.onReady(function () {
     var simpleForm_Save = new Ext.FormPanel({
         renderTo: document.body,
         labelAlign: 'left',
-        title: '牵引跳闸记录添加',
+        title: '跳闸记录添加',
         buttonAlign: 'right',
         bodyStyle: 'padding:5px',
         //width : 800,
@@ -905,7 +905,7 @@ Ext.onReady(function () {
     var simpleForm_Query = new Ext.FormPanel({
         renderTo: document.body,
         labelAlign: 'left',
-        title: '牵引跳闸记录管理',
+        title: '跳闸记录管理',
         buttonAlign: 'right',
         bodyStyle: 'padding:5px',
         //width : 600,
