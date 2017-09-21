@@ -40,6 +40,8 @@
         //out.println(sql_Query);
         System.out.println(sql_Add);
         //java.sql.ResultSet gridResultSet=
+
+        //sql_Add ="alter table z_tsdqr_tdtz modify(TDGDB varchar(500))";
         db_connection.executeUpdate(sql_Add);
 
 
