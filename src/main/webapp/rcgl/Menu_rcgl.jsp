@@ -131,7 +131,7 @@ window.onload = function()
 	//alert(jglbdm);
 	//TaskMenu.setAutoBehavior(false);
 	////////////////////////////////////////////////parent.contents.location.href
-	item31 = new TaskMenuItem("跳闸管理","../Menu_XpStyle/Image/tzjl.gif","parent.contents.location.href='remotefault_query2/remotefault_query.jsp'");
+	item31 = new TaskMenuItem("电力跳闸管理","../Menu_XpStyle/Image/tzjl.gif","parent.contents.location.href='remotefault_query2/remotefault_query.jsp'");
 	item11 = new TaskMenuItem("牵引跳闸管理","../Menu_XpStyle/Image/tzjl.gif","parent.contents.location.href='remotefault_query/remotefault_query.jsp'");
 
     item42 = new TaskMenuItem("值班主任记事","../Menu_XpStyle/Image/report1.gif","parent.contents.location.href='onduty_note3/onduty_note.jsp'");
