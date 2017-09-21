@@ -111,6 +111,7 @@ var item10;
 var item31;
 var item11;
 var item12;
+var item42;
 var item32;
 var item13;
 var item14;
@@ -133,6 +134,7 @@ window.onload = function()
 	item31 = new TaskMenuItem("跳闸管理","../Menu_XpStyle/Image/tzjl.gif","parent.contents.location.href='remotefault_query2/remotefault_query.jsp'");
 	item11 = new TaskMenuItem("牵引跳闸管理","../Menu_XpStyle/Image/tzjl.gif","parent.contents.location.href='remotefault_query/remotefault_query.jsp'");
 
+    item42 = new TaskMenuItem("值班主任记事","../Menu_XpStyle/Image/report1.gif","parent.contents.location.href='onduty_note3/onduty_note.jsp'");
     item12 = new TaskMenuItem("值班记事","../Menu_XpStyle/Image/report1.gif","parent.contents.location.href='onduty_note/onduty_note.jsp'");
     item32 = new TaskMenuItem("设备记事","../Menu_XpStyle/Image/report1.gif","parent.contents.location.href='onduty_note2/onduty_note.jsp'");
     item13 = new TaskMenuItem("交接班管理","../Menu_XpStyle/Image/report.gif","parent.contents.location.href='change_duty/change_duty.jsp'");
@@ -164,6 +166,7 @@ window.onload = function()
 
 		//日常管理		
 		taskMenu4.add(item33);
+		taskMenu4.add(item42);
 		taskMenu4.add(item12);
 		taskMenu4.add(item13);
 		taskMenu4.add(item14);
