@@ -1,4 +1,4 @@
-<%@ page language="java"contentType="text/html;charset=GBK" pageEncoding="GBK"%>
+<%@ page language="java" contentType="text/html;charset=GBK" pageEncoding="GBK"%>
 <%@page import="mor.commons.db.DbTrade"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="java.util.Date"%>
