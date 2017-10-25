@@ -68,6 +68,6 @@ if(bool==1)
 }
 else
 {
-	out.print("{success:true,msg:'±£´æÊ§°Ü£¡'}");
+	out.print("{success:false,msg:'±£´æÊ§°Ü£¡'}");
 }
 %>

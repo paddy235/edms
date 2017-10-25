@@ -166,7 +166,7 @@ window.onload = function()
 
 		//日常管理		
 		taskMenu4.add(item33);
-		taskMenu4.add(item42);
+//		taskMenu4.add(item42);
 		taskMenu4.add(item12);
 		taskMenu4.add(item13);
 		taskMenu4.add(item14);

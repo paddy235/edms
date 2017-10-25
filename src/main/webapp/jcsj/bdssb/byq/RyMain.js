@@ -553,7 +553,7 @@ Ext.onReady(function () {
                         // 通过一个数组定义了returnValue和displayText两个字段。retrunValue字段指定是提交给后台的值，displayText字段指定是在下拉中显示的选择值。
                         fields: ["returnValue", "displayText"],
                         // 定义了几组数据.每组数据都是根据fiedls的定义来组成的，数组里第一个值就是retrunValue的值，第二个值就是displayText的值，例如[1,'小学']，就表示retrunValue是1，displayText是小学。
-                        data: [['湖北变压器厂', '湖北变压器厂'], ['保定铁道变压器厂', '保定铁道变压器厂'], ['长沙变压器厂', '长沙变压器厂'], ['法国阿尔斯通公司', '法国阿尔斯通公司']]
+                        data: [['湖北变压器厂', '湖北变压器厂'], ['保定铁道变压器厂', '保定铁道变压器厂'], ['长沙变压器厂', '长沙变压器厂'], ['法国阿尔斯通公司', '法国阿尔斯通公司'], ['云南变压器厂', '云南变压器厂'], ['宁夏变压器厂', '宁夏变压器厂'], ['顺特变压器厂', '顺特变压器厂']]
                     }),
                     valueField: "returnValue",// 设置下拉选择框的值
                     displayField: "displayText",// 设置下拉选择框的显示文本
