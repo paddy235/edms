@@ -534,18 +534,23 @@ Ext.onReady(function () {
     //simpleForm_Save.collapse();
     //alert("asdfasdf");
     //alert("asdfasdf");
-    var myyear, mymonth, myweek, myday, mytime, mymin, myhour, mysec;
-    var mydate = new Date();
-    myyear = mydate.getFullYear();
-    mymonth = mydate.getMonth();
-    myday = mydate.getDate();
-    myhour = mydate.getHours();
-    mymin = mydate.getMinutes();
-    mysec = mydate.getSeconds();
-    mytime = myyear + "-" + mymonth + "-" + myday + " " + myhour + ":" + mymin;
-    //alert(y+'-'+m'-'+d+' '+h+':'+mi;);
-    // alert( mytime);
-    Ext.getCmp("txt_jbsj").setValue(mytime);
+    function jbsj() {
+        var myyear, mymonth, myweek, myday, mytime, mymin, myhour, mysec;
+        var mydate = new Date();
+        myyear = mydate.getFullYear();
+        mymonth = mydate.getMonth() + 1;
+        myday = mydate.getDate();
+        myhour = mydate.getHours();
+        mymin = mydate.getMinutes();
+        mysec = mydate.getSeconds();
+        mytime = myyear + "-" + mymonth + "-" + myday + " " + myhour + ":" + mymin;
+        //alert(y+'-'+m'-'+d+' '+h+':'+mi;);
+        // alert( mytime);
+        Ext.getCmp("txt_jbsj").setValue(mytime);
+    }
+
+    jbsj();
+    setInterval(jbsj, 5000);
 
     var yhmc = document.getElementById("yhmc").value;
     if (yhmc != "李秀平" && yhmc != "陈大亮" && yhmc != "杨俊峰" && yhmc != "王兴武" && yhmc != "高树伟") {

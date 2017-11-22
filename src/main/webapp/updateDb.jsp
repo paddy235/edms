@@ -9,40 +9,15 @@
     DbTrade db_connection = new DbTrade();
 //得到主键
     try {
-        String sql = "drop table Z_JCSJ_BYQ";
+        String sql = "alter table Z_TSDQR_TDTZ modify(TDSF varchar(255))";
         db_connection.executeUpdate(sql);
-
-        sql = "create table Z_JCSJ_BYQ\n" +
-                "(\n" +
-                "  ID     NUMBER not null,\n" +
-                "  SZDW   VARCHAR2(200),\n" +
-                "  BM     VARCHAR2(100),\n" +
-                "  ZW     VARCHAR2(100),\n" +
-                "  ZY     VARCHAR2(100),\n" +
-                "  XM     VARCHAR2(100),\n" +
-                "  GH     VARCHAR2(100),\n" +
-                "  XB     VARCHAR2(100),\n" +
-                "  JG     VARCHAR2(200),\n" +
-                "  MZ     VARCHAR2(100),\n" +
-                "  HKXZ   VARCHAR2(150),\n" +
-                "  CSD    VARCHAR2(150),\n" +
-                "  CSRQ   DATE,\n" +
-                "  SFZH   VARCHAR2(180),\n" +
-                "  WHCD   VARCHAR2(100),\n" +
-                "  ZZMM   VARCHAR2(100),\n" +
-                "  HYZK   VARCHAR2(100),\n" +
-                "  GZ     VARCHAR2(200),\n" +
-                "  AQDJ   VARCHAR2(100),\n" +
-                "  YDSGDJ VARCHAR2(160),\n" +
-                "  JSDJ   VARCHAR2(160),\n" +
-                "  BC     VARCHAR2(100)\n" +
-                ")";
+        sql = "alter table Z_TSDQR_SDTZ modify(SDSF varchar(255))";
         db_connection.executeUpdate(sql);
 
         db_connection.close();
         out.print("{success:true,msg:'更新成功！'}");
     } catch (Exception e) {
         e.printStackTrace();
-        out.print("{success:false,msg:'更新失败！'}");
+        out.print("{success:false,msg:'更新失败！+" + e.getMessage() + "'}");
     }
 %>

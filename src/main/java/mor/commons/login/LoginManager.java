@@ -7,6 +7,7 @@ package mor.commons.login;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -87,7 +88,11 @@ public class LoginManager extends HttpServlet {
             String sql1 = "select JSDM from j_gyjc_yhjs where YHDM = ?";
             String sql2 = "select GQDM from j_gyjc_yhgq where YHDM = ?";
             if (this.name != null && this.name.length() > 0) {
-                PreparedStatement psmt = DbConn.getConnection().prepareStatement(sql);
+                Connection connection = DbConn.getConnection();
+                if (connection == null) {
+                    throw new IllegalStateException("数据库链接错误：无法链接数据库。");
+                }
+                PreparedStatement psmt = connection.prepareStatement(sql);
                 psmt.setString(1, this.name);
                 rs = psmt.executeQuery();
                 if (rs.next()) {
