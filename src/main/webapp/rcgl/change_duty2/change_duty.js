@@ -47,7 +47,7 @@ Ext.onReady(function () {
     var store = new Ext.data.Store({
         //proxy告诉我们从哪里获得数据
         proxy: new Ext.data.HttpProxy({url: 'change_duty_json.jsp'}),
-        baseParams: {whereclause: 'dwid = ' + "'" + userdwid + "'"},//点击翻页的时候，这个值不会消失，作为基本参数，只有点击查询按钮时才会改变
+        baseParams: {whereclause: '1=1'},//点击翻页的时候，这个值不会消失，作为基本参数，只有点击查询按钮时才会改变
 
         //reader告诉我们如何解析这个数据
         reader: new Ext.data.JsonReader({
