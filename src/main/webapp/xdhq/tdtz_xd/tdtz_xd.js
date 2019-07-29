@@ -197,18 +197,6 @@ Ext.onReady(function() {
                                                          //allowBlank : false// 该选项值不允许为空
                                                   }]
                                      },{
-                                            columnWidth : .4,
-                                            layout : 'form',
-                                            border : false,
-                                            items : [{
-                                                         xtype : 'textfield',// 控件的类型为datefield
-                                                         fieldLabel : '供电臂',
-                                                         name : 'TDGDB',
-                                                         anchor : '96%',
-                                                       //  format:'Y-m-d'
-                                                         allowBlank : false// 该选项值不允许为空
-                                                  }]
-                                     },{
                                             columnWidth : .2,
                                             layout : 'form',
                                             border : false,
@@ -326,7 +314,19 @@ Ext.onReady(function() {
 														   id:'txt_TD_DDT',                                                               
 														   anchor : '96%'// input的宽度是90%
                                                         }]
-                                            }]
+                                            },{
+                               columnWidth : .8,
+                               layout : 'form',
+                               border : false,
+                               items : [{
+                                   xtype : 'textarea',// 控件的类型为datefield
+                                   fieldLabel : '供电臂',
+                                   name : 'TDGDB',
+                                   anchor : '96%',
+                                   //  format:'Y-m-d'
+                                   allowBlank : false// 该选项值不允许为空
+                               }]
+                           }]
 
                             }],
         buttons: [{

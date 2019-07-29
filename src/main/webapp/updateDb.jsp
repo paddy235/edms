@@ -9,9 +9,11 @@
     DbTrade db_connection = new DbTrade();
 //µÃµ½Ö÷¼ü
     try {
-        String sql = "alter table Z_TSDQR_TDTZ modify(TDSF varchar(255))";
-        db_connection.executeUpdate(sql);
-        sql = "alter table Z_TSDQR_SDTZ modify(SDSF varchar(255))";
+//        String sql = "alter table Z_TSDQR_TDTZ modify(TDSF varchar(255))";
+//        db_connection.executeUpdate(sql);
+//        sql = "alter table Z_TSDQR_SDTZ modify(SDSF varchar(255))";
+//        db_connection.executeUpdate(sql);
+        String sql = "delete from Z_YXGL_WTK";
         db_connection.executeUpdate(sql);
 
         db_connection.close();

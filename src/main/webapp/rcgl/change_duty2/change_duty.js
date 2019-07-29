@@ -47,7 +47,7 @@ Ext.onReady(function () {
     var store = new Ext.data.Store({
         //proxy告诉我们从哪里获得数据
         proxy: new Ext.data.HttpProxy({url: 'change_duty_json.jsp'}),
-        baseParams: {whereclause: '1=1'},//点击翻页的时候，这个值不会消失，作为基本参数，只有点击查询按钮时才会改变
+        baseParams: {whereclause: "1=1 and dwid='" + userdwid+"'"},//点击翻页的时候，这个值不会消失，作为基本参数，只有点击查询按钮时才会改变
 
         //reader告诉我们如何解析这个数据
         reader: new Ext.data.JsonReader({
@@ -464,7 +464,7 @@ Ext.onReady(function () {
                 ;
                 // 在formpanel类中，form属性指向的是formpanle里的basicform对象，我们可通过formpanle.form来使用该basicform对象。在被例子，我们已经将formpanel对象赋值给了simpleForm这个变量，所以我们可以通过simpleForm.form访问面板里的basicform对象。
                 if (simpleForm_Query.form.isValid()) {
-                    var where = " and 1=1 ";
+                    var where = " and 1=1 and dwid='" + userdwid +"' ";
                     //alert(Ext.getCmp("txt_ksrq").getValue());
                     if (Ext.getCmp("txt_ksrq").getValue() != "") {
                         where = where + " and jbsj >=to_date('" + Ext.getCmp(

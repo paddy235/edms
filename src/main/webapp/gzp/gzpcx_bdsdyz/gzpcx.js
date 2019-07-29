@@ -288,7 +288,7 @@ Ext.onReady(function() {
 													   //alert(where);
 													}
 													 
-													 alert(where);
+													 //alert(where);
 													store.baseParams.table=table;
 													store.baseParams.whereclause =where; 
 													
