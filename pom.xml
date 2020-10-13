@@ -23,7 +23,7 @@
         <aspectjweaver.version>1.8.9</aspectjweaver.version>
         <persistence-api.version>1.0.2</persistence-api.version>
 
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <mockito.version>2.7.22</mockito.version>
         <druid.version>1.0.25</druid.version>
         <sitemesh.version>3.0.1</sitemesh.version>
